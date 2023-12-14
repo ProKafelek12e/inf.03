@@ -1,0 +1,65 @@
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 1fr 15%;
+    grid-template-areas: 'banerL banerR' 'main main' 'foot foot';
+
+    font-family: Helvetica;
+
+    background-color: linen;
+    color: #222;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#banerL{
+    grid-area: banerL;
+    background-color: black;
+    color: white;
+}
+
+#banerR{
+    grid-area: banerR;
+    background-color: black;
+    color: white;
+}
+
+#main{
+    grid-area: main;
+    padding: 20px;
+}
+#foot{
+    grid-area: foot;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+table{
+    margin: 40px;
+}
+td{
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+a{
+    color: #aaa;
+    border-bottom: white 1px solid;
+    text-decoration: none;
+    margin: 5px;
+}
+a:hover{
+    color: white;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 10px;
+    list-style-type:none
+}
